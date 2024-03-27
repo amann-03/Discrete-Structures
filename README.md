@@ -1,7 +1,7 @@
 # Discrete-Structures
 Implementation of various Graphs Algorithms 
 
-Question.1
+Function-1 : find_junctions()
 
 ❖ Initially we made a variable “junctions” to store the no. of junctions in the railway network. 
 ❖ Then we ran a nested for loop to go through all the edges. For a particular i (i.e particular 
@@ -11,7 +11,7 @@ vertex) we made a “count” variable to store the total edges through that ver
 junction variable.
 ❖ At the end we returned the “junction” variable.
 
-Question.2
+Function-2 : sheldons_tour()
 
 ❖ First we made two variables named “even” and “odd”, to store how many vertices are of 
 even degree and odd degree.
@@ -23,7 +23,7 @@ or odd and accordingly incremented either even or odd variable.
 Euler circuit. And if exactly two vertices are odd , then it’s a Euler path.
 ❖ If not both, it returns false.
 
-Question.3
+Function-3 : warshall()
 
 ❖ Initially, we copied the content of adjacency matrix of graph g into closure matrix by running 
 nested for-loop. Also introduced variable “len” to store the no. of vertices .
@@ -46,7 +46,7 @@ impossible pair.
 and closure[j][i]=0 , because we want unique pairs.
 ❖ So, count/2 gives us the final value of impossible pairs.
 
-Question.4
+Function-4 : find_impossible_pairs()
 
 ❖ Basically, here I made a variable “org_pair” which stored the count of no. of unique
 impossible pairs in our original graph g.
@@ -60,7 +60,7 @@ further iterations.
 counted twice in vital.
 ❖ Finally, vital/2 gives us the final no. of vital edges.
 
-Question.5
+Function-5 : find_vital_train_tracks()
 
 The function aims to decide between two types of upgrades (restaurant or maintenance depot) for 
 railway stations, ensuring that adjacent stations have different upgrades.
@@ -73,7 +73,7 @@ meet the constraints, leading to the allocation of a cannot_upgrade array indica
 If no conflicts are detected, the function finalizes the upgrades by copying the upgrade plan from 
 m_or_r to upgrades, which is then returned.
 
-Question.6
+Function-6 : upgrade_railway_stations()
 
 ❖ First, we checked that if city_x and city_y are same vertices, we returned zero.
 ❖ Then, we made two arrays – one Boolean array “visited[g->n]” all initialized with false and 
@@ -91,7 +91,7 @@ distances from the city_x.
 and city_y.
 ❖ Here, on brief view we have used the concept of Breadth first Search(BFS).
 
-Question 7
+Function-7 : railway_capital()
 
 ❖ First of all we create an array “dist” of size n(no. of stations). In this array we are going to 
 store the sum of minimum distances corresponding to each station.
@@ -105,7 +105,7 @@ which it keeps on adding to the “sum” variable.
 ❖ Now we find the minimum value index of the array by running the array through a for loop.
 ❖ At the end we are returning the index where the value in minimum.
 
-Question.8
+Function-8 : maharaja_express_tour()
 
 maharaja_express_tour is a recursive function used to check if a valid Maharaja Express tour can be 
 conducted starting from a given source city, following the constraints of starting and ending at the 
